@@ -1,3 +1,5 @@
 # DotEnv configuration
 .env
+
+#j venv config 
 /j_dev
