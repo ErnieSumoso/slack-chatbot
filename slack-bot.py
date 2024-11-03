@@ -35,7 +35,7 @@ def message(payload):
     text = event.get('text')
 
     # If the bot was not tagged or the message was sent but the same bot then stop processing
-    bot_tag = '<@' + BOT_ID + '>'
+    bot_tag = f"<@{BOT_ID}>"
     if  bot_tag not in text or BOT_ID == user_id:
         return
     
