@@ -8,7 +8,7 @@
   </a>
 
   <h3 align="center">Slack Bot</h3>
-    This is our private repository for the development of a Slack Chatbot, designed primarily to detect and echo user queries within our Slack workspace.
+    This is a repository for the development of a Slack Chatbot, designed primarily to detect and echo user queries within a Slack workspace.
   <p align="center">
     <br />
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Issue</a>
@@ -24,15 +24,7 @@
   <img src="media/project-showcase.png" alt="Showcase" width="666" height="400">
 </div>
 This repository contains the code and documentation for the development and deployment of a simple Slack Bot.
-The project utilizes the Slack API and Ngrok for deployment. It serves as a showcase for the course
-AML3304: Software Tools and Emerging Technologies for AI and ML.
-We are Group 2, and the team members are:
-
-- Aanal	Patel	- C0910376
-- Bimal Kumar	Shrestha - C0919385
-- Danilo	Diaz - C0889539
-- Ernie	Sumoso - C0881591
-- Jayachandran Saravanan - C0910392
+The project utilizes the Slack API and Ngrok for deployment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
