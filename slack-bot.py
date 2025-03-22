@@ -17,7 +17,7 @@ slack_event_adapter = SlackEventAdapter(
 
 # Setting up the slack web client and our bot unique user ID
 client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
-BOT_ID = client.api_call("auth.test")['user_id']
+bot_id = client.api_call("auth.test")['user_id']
 
 # Post verification required from the Slack API
 @app.route("/", methods=['POST'])
@@ -35,8 +35,8 @@ def message(payload):
     text = event.get('text')
 
     # If the bot was not tagged or the message was sent but the same bot then stop processing
-    bot_tag = f"<@{BOT_ID}>"
-    if  bot_tag not in text or BOT_ID == user_id:
+    bot_tag = f"<@{bot_id}>"
+    if  bot_tag not in text or bot_id == user_id:
         return
     
     # Otherwise, check if the message has a question mark to echo the question
