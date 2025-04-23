@@ -45,7 +45,7 @@ replying only when tagged (using @botname), echoing user queries back to the cha
 
 1. To start the installation you need [Python 3+](https://www.python.org/downloads/) installed.
 
-2. You need to create an application in your [Slack API](api.slack.com).
+2. You need to create an application in your [Slack API](https://api.slack.com/).
 
 3. Give the following permissions to your Slack App:
     - channels:history
