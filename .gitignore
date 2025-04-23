@@ -1,6 +1,3 @@
-# DotEnv configuration
+# environment config
 .env
-
-#j venv config 
-/j_dev
 /env

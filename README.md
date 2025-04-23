@@ -3,17 +3,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ErnieSumoso/AML3304_Group2">
-    <img src="media/project-icon.png" alt="Icon" width="80" height="80">
-  </a>
+    <img src="readme-files/project-icon.png" alt="Icon" width="120">
 
   <h3 align="center">Slack Bot</h3>
-    This is a repository for the development of a Slack Chatbot, designed primarily to detect and echo user queries within a Slack workspace.
+  <b>### Final version - no additional updates planned ###</b> <br><br>
+    This repository contains the development of a Slack Chatbot using Python, designed to detect and respond to user queries within a Slack workspace.
+    The bot is programmed to respond only when directly mentioned, ensuring non-intrusive interactions.
   <p align="center">
     <br />
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Issue</a>
+    <a href="https://github.com/ErnieSumoso/slack-chatbot/pulls">Pull Requests</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/ErnieSumoso/slack-chatbot/issues">Issues</a>
   </p>
 </div>
 
@@ -21,10 +21,11 @@
 ## About The Project
 
 <div align="center">
-  <img src="media/project-showcase.png" alt="Showcase" width="666" height="400">
+  <img src="readme-files/project-showcase.png" alt="Showcase" width="600">
 </div>
-This repository contains the code and documentation for the development and deployment of a simple Slack Bot.
-The project utilizes the Slack API and Ngrok for deployment.
+The project uses the Slack API for message handling and Ngrok for exposing the local server to the internet, allowing real-time testing and deployment.
+The repository includes all source code and documentation required for setup and customization. Some of the chatbot current features include: detecting user queries in Slack channels,
+replying only when tagged (using @botname), echoing user queries back to the channel.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -42,21 +43,19 @@ The project utilizes the Slack API and Ngrok for deployment.
 
 ### Prerequisites
 
-To start the installation you need to have Python installed on your computer:
-* [Python 3+](https://www.python.org/downloads/)
+1. To start the installation you need [Python 3+](https://www.python.org/downloads/) installed.
 
-You need to create an application in your Slack API
-* [Slack API](api.slack.com)
+2. You need to create an application in your [Slack API](api.slack.com).
 
-Give the following permissions to your Slack App:
-- channels:history
-- channels:read
-- chat:write
+3. Give the following permissions to your Slack App:
+    - channels:history
+    - channels:read
+    - chat:write
 
-And install the app on the desired Slack channels on your workspace.
+4. Install the app on the desired Slack channels within your workspace.
 
-Finally, Ngrok authentication is required. You can create an account in the following site to get a token.
-* [Ngrok](https://dashboard.ngrok.com/get-started/your-authtoken)
+5. Finally, Ngrok authentication is required. You can create an account in the following site to get a token.
+    - [Ngrok](https://dashboard.ngrok.com/get-started/your-authtoken)
 
 ### Installation
 
@@ -79,7 +78,7 @@ Finally, Ngrok authentication is required. You can create an account in the foll
 5. Set env variables SLACK_TOKEN and SIGNING_SECRET, from your Slack API
 6. Run the project
    ```sh
-   python slack-bot.py
+   python src/slack-bot.py
    ```
 7. Open the Ngrok file and authenticate using your Ngrok Token:
    ```sh
@@ -89,30 +88,33 @@ Finally, Ngrok authentication is required. You can create an account in the foll
    ```sh
    ngrok http [PORT TO DEPLOY]
    ```
-9. Activate event subscriptions in your Slack API
-10. Copy and paste the free URL provided by Ngrok CMD into the Slack API event subscription
-11. Reinstall your app into the channels on your Slack workspace
-12. Enjoy!
+9. Activate event subscriptions on your Slack API.
+10. Copy and paste the free URL provided by Ngrok CMD into the Slack API event subscription.
+11. Finally, reinstall your Slack API application into your channels on your Slack workspace.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
-You can use this repository to create an initial template for a Slack bot yourself!
+You can use this repository as a starting point to build your own Slack bot using Python.
+It provides a basic template with core features like detecting and responding to user messages when tagged.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Roadmap
 
-- [X] Bot is able to detect user queries
-- [X] Bot responds only when it is tagged
-- [X] Bot echoes user queries
+- [X] The bot can detect user queries within Slack channels.
+- [X] The bot responds only when it is directly tagged.
+- [X] the bot echoes user’s queries back to the channel.
 
-We are always open for any suggestions on what feature to implement next. Please, add them on the [issues section](https://github.com/ErnieSumoso/AML3304_Group2/issues).
+I am always open for suggestions and new features to implement next. Please, add them on the [issues section](https://github.com/ErnieSumoso/slack-chatbot/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTACT -->
+## Contact
+Ernie Sumoso - [GitHub Profile](https://github.com/ErnieSumoso) - [My Repositories](https://github.com/ErnieSumoso?tab=repositories)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [python-badge]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
